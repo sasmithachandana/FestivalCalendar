@@ -1,6 +1,5 @@
 <html>
 <body>
-
 <?php 
 
 include_once("config.php");
@@ -29,6 +28,6 @@ echo "failed";
 }
 }
 }		
- ?>
+?>
  </body>
  </html>
