@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+div.background {
+background-image: url("1.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+  
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ABB2B9  ;
+  border: 1px solid black;
+  height: 90%;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 50px;
+ text-align: center;
+  margin: 5%;
+  font-weight: bold;
+  color:#000000;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  height:100px;
+  width: 500px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: auto;
+  top: 50%;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="background">
+  <div class="transbox">
+    
+    <p style="color:red;">Welcome To -EPL-</p>
+	<p style="font-size:160%;">-We Publish Your Event-</p>
+    <p style="font-size:160%;">-It's Easy And Free-</p>
+	
+	 <a href="infor.html"><center><button class="button" style="vertical-align:middle"><span>Next</span></button></a> 
+	
+  </div>
+
+</div>
+
+</body>
+</html>

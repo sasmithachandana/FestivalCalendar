@@ -5,28 +5,34 @@ $result1=mysqli_query($mysqli,"SELECT advertisement.heading,advertisement.detail
 
 <html>
 <head>
-<title></title>
+<style>
+
+
+</style>
 </head>
 
 <body>	
  <table width='100%' border=1 style="border-collapse:collapse;" >
 
 <?php 
+
+           
             while($res = mysqli_fetch_array($result1)) {  
-			echo "<tr>";
-			echo "<td>";
 			
-			echo "<h1>";echo $res['heading'];echo "</h1>";
+			echo '<div>'; echo '<h1>'; echo$res['heading']; echo '<h1>'; echo'</div>';
 			
-			$res2='<img src="data:image/jpeg;base64,'.base64_encode($res['image']).'"width="200" height="150"/>';
-			 echo "<td>".$res2."</td>";echo "<br>";
+			$res2='<img src="data:image/jpeg;base64,'.base64_encode($res['image']).'"width="1000" height="500"/>';
 			
-            echo "<td>".$res['detail']."</td>";
-			echo "<br>";echo "<br>";echo "<br>";
+			echo'<div>';  echo $res2;  echo '</div>';	
+			
+            echo'<div>';  echo'<p This is a paragraph.>'; echo $res['detail']; echo'</p>'; echo '</div>'; 
+			
+			echo"_______________________________________________________________________________________________________________________________________________________________________";
+			echo"_______________________________________________________________________________________________________________________________________________________________________";
 			}
+
 			
         ?>
-		
 		</table>
 </body>
 </html>		
